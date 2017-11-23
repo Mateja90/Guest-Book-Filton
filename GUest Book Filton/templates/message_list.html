@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Message list</title>
+  </head>
+  <body>
+      <h1>Guest messages:</h1>
+      {%for i in message_list%}
+      <a href="message/{{i.key.id()}}" /><p> {{i.text}} - {{i.name}} - {{i.meil}} - {{i.date}}</p>
+      {%endfor%}
+  </body>
+</html>
